@@ -1,4 +1,3 @@
-
 language: swift
 osx_image: xcode10.1
 branches:
@@ -6,7 +5,7 @@ branches:
    - master
 
 before_install:
-  - gem install fastlane --no-ri --no-rdoc --no-document
+  - sudo gem install fastlane --no-rdoc --no-ri
 install: true
 script:
   - fastlane scan --scheme TAU --device "iPhone XR"
