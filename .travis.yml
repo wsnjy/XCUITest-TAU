@@ -5,7 +5,7 @@ branches:
    - master
 
 before_install:
-  - sudo gem install fastlane --no-rdoc --no-ri
+  - sudo brew install fastlane --no-rdoc --no-ri
 install: true
 script:
   - fastlane scan --scheme TAU --device "iPhone XR"
